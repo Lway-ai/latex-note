@@ -1,0 +1,6 @@
+{
+  "name": "latex-note",
+  "version": "0.2.1",
+  "description": "Native XeLaTeX Chinese technical notes with editable equations, compile checks and PDF visual review.",
+  "skills": "skills"
+}

@@ -1,0 +1,6 @@
+interface:
+  display_name: "LaTeX Note"
+  short_description: "Create Chinese technical notes as LaTeX projects and PDFs."
+  default_prompt: "Use $latex-note to create or continue this Chinese technical note as an editable LaTeX project and PDF."
+policy:
+  allow_implicit_invocation: true

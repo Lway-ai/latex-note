@@ -1,0 +1,29 @@
+% !TeX program = xelatex
+\documentclass[UTF8,a4paper,zihao=-4,fontset=none]{ctexart}
+\usepackage{amsmath,unicode-math,graphicx,geometry,setspace,caption,fancyhdr}
+\usepackage[hidelinks]{hyperref}
+\setmainfont{Times New Roman}
+\IfFontExistsTF{SimSun}{\setCJKmainfont{SimSun}}{\setCJKmainfont{FandolSong-Regular.otf}}
+\IfFontExistsTF{SimHei}{\setCJKsansfont{SimHei}}{\setCJKsansfont{FandolHei-Regular.otf}}
+\setmathfont{latinmodern-math.otf}
+\geometry{left=27mm,right=27mm,top=25mm,bottom=25mm,headheight=15pt}
+\setstretch{1.42}
+\setlength{\parindent}{2em}
+\counterwithin{equation}{section}
+\counterwithin{figure}{section}
+\captionsetup{font=small,labelsep=quad}
+\ctexset{section={format=\centering\sffamily\zihao{3},number=\arabic{section}}}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{\small\leftmark}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\sectionmark}[1]{\markboth{#1}{}}
+
+\begin{document}
+\section{技术学习笔记}
+本模板演示原生数学排版。采用带源极电阻的低频小信号模型，忽略栅电流、体效应与沟道长度调制，可得
+\begin{equation}\label{eq:gm}
+G_m\equiv\frac{i_d}{v_{\mathrm{in}}}=\frac{g_m}{1+g_mR_S}.
+\end{equation}
+式\eqref{eq:gm}中的分式、下标、变量与运算符由同一数学字族排版。正式写作时按用户材料替换本段示例，并补齐适用条件和出处。
+\end{document}

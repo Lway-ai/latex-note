@@ -1,0 +1,13 @@
+# LaTeX Note bundle patch for DeepSeek Harness.
+#
+# This layer inserts the one plugin row the bundle contributes. The row's
+# `name` is the installed package name, so Node resolution finds lib/index.js:
+#
+#   DeepSeek Harness Desktop profile ($DSH_HOME/profiles/desktop):
+#     dsh plugin --profile desktop add "/path/to/latex-note"
+#
+# `name:` must stay identical to package.json's `name`; a mismatch makes the
+# loader report that it cannot find the plugin module.
+- insert:
+    - id: latex-note
+      name: dsh-plugin-latex-note

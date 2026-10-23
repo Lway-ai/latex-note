@@ -1,0 +1,27 @@
+{
+  "name": "latex-note",
+  "version": "0.2.1",
+  "description": "Create, convert and review Chinese technical study notes as native XeLaTeX projects and compiled PDFs.",
+  "author": {
+    "name": "Wanglei"
+  },
+  "license": "MIT",
+  "skills": "./skills/",
+  "requires_local_executor": true,
+  "interface": {
+    "displayName": "LaTeX Note",
+    "shortDescription": "Chinese technical notes with native LaTeX equations and PDF review.",
+    "longDescription": "Successor to Word Team. Produces editable XeLaTeX sources, relative figure assets, a compiled PDF and validation evidence. Defaults to Latin Modern Math, automatic equation numbering and rendered page review. Supports conversion of existing Word notes while preserving originals.",
+    "developerName": "Wanglei",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write",
+      "Interactive"
+    ],
+    "defaultPrompt": [
+      "使用 LaTeX Note 制作中文技术学习笔记，交付源码工程和 PDF。",
+      "将这份 Word 笔记转换为完整的 LaTeX 笔记工程。"
+    ]
+  }
+}

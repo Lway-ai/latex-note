@@ -1,0 +1,61 @@
+{
+  "name": "dsh-plugin-latex-note",
+  "version": "0.2.1",
+  "description": "LaTeX Note for DeepSeek Harness: create, extend, convert and review Chinese technical study notes as editable native XeLaTeX projects with compiled PDF delivery. Successor to Word Team.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "skill",
+    "skills",
+    "latex",
+    "xelatex",
+    "notes",
+    "pdf"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/**/*.js",
+    "skills/**",
+    "assets/**",
+    "scripts/**",
+    "cordis.patch.yml",
+    "README.md",
+    "AGENTS.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    ".codex-plugin/plugin.json",
+    ".zcode-plugin/plugin.json",
+    "!scripts/__pycache__/**",
+    "!scripts/**/*.pyc"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "test": "node --test scripts/test_dsh_plugin.mjs"
+  },
+  "engines": {
+    "dsh": ">=0.2.0-rc.2",
+    "node": ">=20"
+  },
+  "author": {
+    "name": "Wanglei"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lway-ai/latex-note.git"
+  },
+  "homepage": "https://github.com/Lway-ai/latex-note#readme",
+  "bugs": {
+    "url": "https://github.com/Lway-ai/latex-note/issues"
+  }
+}
