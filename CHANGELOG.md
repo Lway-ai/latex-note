@@ -1,5 +1,11 @@
 # Changelog
 
+## Workflow update — 2026-10-23
+
+- Route new and edited circuit schematics through the user's Circuit Draw plugin (`circuit-draw:draw-circuit`), including its independent review workflow.
+- Retain editable JSON/SVG and reviewed artwork for LaTeX inclusion; report an unavailable plugin instead of silently substituting another tool. Explicit user tool choices still take precedence.
+
+
 ## Open-source packaging — 2026-10-23
 
 - Add MIT licensing and portable installation instructions.

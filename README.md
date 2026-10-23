@@ -91,3 +91,12 @@ python scripts/build_note.py --help
 ## 许可证
 
 [MIT](LICENSE)。TeX 发行版、字体、宿主应用及用户输入材料遵循各自的许可。
+
+## 电路图工具
+
+笔记中新增或修改电路图时，调用用户的 **Circuit Draw** 插件技能
+`circuit-draw:draw-circuit`（`draw-circuit`），按其绘制、独立评审和修订流程执行。
+需要在使用宿主中另外安装并启用 Circuit Draw；本插件不内嵌该插件。
+工程保留可编辑 JSON 和 SVG，按需导出 PDF/PNG 插入 XeLaTeX，并检查最终页面。
+插件不可用时说明缺失依赖，不静默改用 circuitikz、手写 SVG 或生成图片。
+用户明确指定其他工具时遵从用户；已有图片可直接复用。

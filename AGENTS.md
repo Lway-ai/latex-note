@@ -5,6 +5,7 @@ This plugin replaces the Word Team default output with native LaTeX projects and
 - Read `skills/latex-note/SKILL.md` and its style reference before authoring.
 - Preserve the user's existing documents; edit an existing LaTeX project in place after a backup.
 - Use native TeX mathematics. Do not route new notes through DOCX, OMML, OfficeCLI or Word font normalization.
+- For new or edited circuit schematics, invoke `circuit-draw:draw-circuit` as specified in `skills/latex-note/SKILL.md`; preserve an explicit user tool choice.
 - A successful build is necessary but does not replace rendered page inspection.
 - Preserve mathematics, dot conventions, units, citations and simulation provenance during conversion.
 - Do not infer a successful simulation from a successful document build.
